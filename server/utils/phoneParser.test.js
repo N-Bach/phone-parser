@@ -15,7 +15,6 @@ describe('phoneParser', () => {
     let phone2 = '01281234567';
     let s = `My phone number is ${phone1} ${phone2} ${phone1}`;
     let result = phoneParser(s);
-    console.log(result);
     expect(result).to.have.lengthOf(2);
   });
 
