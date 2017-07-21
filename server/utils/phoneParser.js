@@ -9,7 +9,7 @@ var phoneParser = s => {
     let trimResult = phoneNumber.replace(space, '');
     response.push(trimResult);
   });
-  return _.sortedUniq(response);
+  return _.uniq(response);
 };
 
 module.exports = { phoneParser };
