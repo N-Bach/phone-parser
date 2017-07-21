@@ -22,8 +22,7 @@ describe('phoneParser', () => {
     let phone = '0961234567';
     let s = `My phone number is 012437873935 0963787..  .39..35`;
     let result = phoneParser(s);
-    console.log(result);
 
-    expect(result).to.have.lengthOf(1);
+    expect(result).to.have.lengthOf(0);
   });
 });
